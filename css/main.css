@@ -1,0 +1,112 @@
+:root {
+    --yelow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+@font-face {
+    font-family: Figtree;;
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf"),
+        url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf");
+}
+html {
+    box-sizing: border-box;
+    background-color: var(--yelow);
+    font-size: 62.5%;
+    font-family: Figtree;
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+.main-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    animation-duration: .3s;
+}
+
+.color-label {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.card-container {
+    width: 32.7rem;
+    max-height: 52.1rem;
+    background-color: #fff;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    border: thin solid #000;
+    box-shadow: 12px 12px 0px -3px rgba(0,0,0,1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.card-content {
+    gap: 1.2rem;
+}
+
+.card-img {
+    border-radius: 9rem;
+    height: max-content;
+}
+.card-img > svg {
+    overflow: hidden;
+}
+
+.card-tag {
+    font-weight: 800;
+    color: var(--gray-950);
+    background-color: var(--yelow);
+    display: inline;
+    padding-inline: .8rem;
+    padding-block: .4rem;
+    border-radius: .4rem;
+}
+
+.card-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.card-title:hover {
+    cursor: pointer;
+    color: var(--yelow);
+}
+
+.card-text {
+    color: var(--gray-500);
+}
+
+.card-user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    
+}
+.card-user-photo {
+    width: 3.2rem;
+}
+.card-user-name {
+    font-weight: 800;
+}
+
+.footer {
+    margin-top: 1.6rem;
+}
